@@ -1,0 +1,12 @@
+{
+  "name": "BeredskAppen",
+  "short_name": "BeredskAppen",
+  "description": "Offline emergency preparedness for your household.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f7",
+  "theme_color": "#13243b",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#13243b" />
+    <meta name="description" content="Offline emergency preparedness for your household." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BeredskAppen</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#dashboard" aria-label="BeredskAppen home">
+        <span class="brand-mark" aria-hidden="true">✦</span><span>BeredskAppen</span>
+      </a>
+      <div class="header-actions">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Åpne meny">
+          <span aria-hidden="true">☰</span>
+        </button>
+        <button class="theme-toggle" id="low-power-toggle" type="button" aria-pressed="false" aria-label="Slå på lavt strømforbruk">
+          <span class="theme-icon sun" aria-hidden="true">☀</span>
+          <span class="theme-thumb" aria-hidden="true"></span>
+          <span class="theme-icon moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="language-button" id="language-toggle" type="button" aria-label="Change language">EN</button>
+        <span class="offline-state" id="offline-state" aria-live="polite"></span>
+      </div>
+    </header>
+    <div class="app-shell">
+      <nav class="sidebar" id="mobile-nav" aria-label="Main navigation">
+        <a href="#dashboard" data-route="dashboard">Overview</a>
+        <a href="#onboarding" data-route="onboarding">Checklist</a>
+        <a href="#inventory" data-route="inventory">Supplies</a>
+        <a href="#rotation" data-route="rotation">Use soon</a>
+        <a href="#locations" data-route="locations">Oppbevaringssteder</a>
+        <a href="#scenarios" data-route="scenarios">Scenario mode</a>
+        <a href="#household" data-route="household">Household setup</a>
+        <a href="#contacts" data-route="contacts">Contacts</a>
+        <a href="#reviews" data-route="reviews">Review routine</a>
+      </nav>
+      <main id="main" tabindex="-1"></main>
+    </div>
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+    <div id="print-label" aria-hidden="true"></div>
+    <div id="print-label-sheet" aria-hidden="true"></div>
+    <div id="print-household-plan" aria-hidden="true"></div>
+    <script src="vendor/qrcode.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
