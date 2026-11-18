@@ -145,3 +145,5 @@ body.low-power .scenario-summary.amber { background:#2d240c; }.low-power .scenar
 body.low-power .scenario-numbers > div { background:#171717; color:#fff; border-color:#7e7e7e; }
 body.low-power .scenario-numbers span { color:#fff; }
 @media (max-width:520px) { .scenario-numbers { grid-template-columns:1fr; } }
+
+body.setup-flow .sidebar,body.setup-flow .menu-toggle { display:none !important; }
